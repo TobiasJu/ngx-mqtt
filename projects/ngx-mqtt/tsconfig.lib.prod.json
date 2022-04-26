@@ -5,6 +5,7 @@
     "declarationMap": false
   },
   "angularCompilerOptions": {
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "enableIvy": false
   }
 }
