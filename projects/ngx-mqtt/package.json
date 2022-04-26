@@ -1,7 +1,7 @@
 {
 
   "name": "@meddv/ngx-mqtt",
-  "version": "9.0.5",
+  "version": "13.3.2",
   "description": "ngx mqtt client library",
   "repository": {
     "type": "git",
@@ -73,8 +73,6 @@
     "mqtt-browser": "4.2.7",
 
     "mqtt-packet": "6.10.0",
-
-    "ngx-mqtt": "file:../..",
 
     "tslib": "2.1.0",
 
