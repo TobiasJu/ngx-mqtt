@@ -36,32 +36,32 @@
     "test": "ng test --watch false --browsers ChromeHeadless"
   },
   "dependencies": {
-    "@angular/common": "~12.0.3",
-    "@angular/compiler": "^12.0.3",
-    "@angular/core": "^12.0.3",
-    "@angular/platform-browser": "~12.0.3",
-    "@angular/platform-browser-dynamic": "~12.0.3",
+    "@angular/common": "^13.3.4",
+    "@angular/compiler": "^13.3.4",
+    "@angular/core": "^13.3.4",
+    "@angular/platform-browser": "^13.3.4",
+    "@angular/platform-browser-dynamic": "^13.3.4",
     "buffer": "^6.0.3",
-    "rxjs": "~6.6.0",
-    "tslib": "^2.1.0",
-    "zone.js": "~0.11.4"
+    "rxjs": "^7.5.5",
+    "tslib": "^2.4.0",
+    "zone.js": "~0.11.5"
   },
   "devDependencies": {
-    "@angular-builders/custom-webpack": "^12.0.0",
-    "@angular-devkit/build-angular": "~12.0.3",
-    "@angular/cli": "~12.0.3",
-    "@angular/compiler-cli": "~12.0.3",
-    "@types/jasmine": "~3.6.0",
-    "eslint": "7.27.0",
+    "@angular-builders/custom-webpack": "^13.1.0",
+    "@angular-devkit/build-angular": "^13.3.3",
+    "@angular/cli": "^13.3.3",
+    "@angular/compiler-cli": "^13.3.4",
     "@types/estree": "0.0.48",
+    "@types/jasmine": "~3.6.0",
     "@types/node": "^12.20.13",
-    "jasmine-core": "~3.7.0",
+    "eslint": "7.27.0",
+    "jasmine-core": "~4.1.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^12.0.0",
-    "typescript": "~4.2.3"
+    "ng-packagr": "^13.3.1",
+    "typescript": "4.6.3"
   }
 }

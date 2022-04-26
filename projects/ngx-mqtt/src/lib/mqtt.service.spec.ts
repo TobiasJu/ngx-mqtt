@@ -17,8 +17,8 @@ import {
 
 const config: IMqttServiceOptions = {
   connectOnCreate: true,
-  hostname: 'localhost',
-  port: 9001
+  hostname: 'dev-broker.meddv.de',
+  port: 1339
 };
 
 const currentUuid = generateUuid();
