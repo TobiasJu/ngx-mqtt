@@ -1,7 +1,6 @@
 import {EventEmitter, Inject, Injectable} from '@angular/core';
 import { connect, IClientPublishOptions, IClientSubscribeOptions, ISubscriptionGrant, MqttClient } from 'mqtt-browser';
 import { Packet } from 'mqtt-packet';
-import * as extend from 'xtend';
 
 import {BehaviorSubject, merge, Observable, Observer, Subject, Subscription, Unsubscribable, using} from 'rxjs';
 import {filter, publish, publishReplay, refCount} from 'rxjs/operators';
@@ -168,7 +167,7 @@ export class MqttService {
    * connect manually connects to the mqtt broker.
    */
   public connect(opts?: IMqttServiceOptions, client?: MqttClient) {
-    const options = extend(this.options || {}, opts);
+    const options = {...(this.options || {}), ...opts};
     const protocol = options.protocol || 'ws';
     const hostname = options.hostname || 'localhost';
     if (options.url) {
@@ -179,11 +178,11 @@ export class MqttService {
       this._url += options.path ? `${options.path}` : '';
     }
     this.state.next(MqttConnectionState.CONNECTING);
-    const mergedOptions = extend({
+    const mergedOptions = {...{
       clientId: this._clientId,
       reconnectPeriod: this._reconnectPeriod,
       connectTimeout: this._connectTimeout
-    }, options);
+    }, ...options};
 
     if (this.client) {
       this.client.end(true);
@@ -381,6 +380,6 @@ export class MqttService {
   }
 
   private _generateClientId() {
-    return 'client-' + Math.random().toString(36).substr(2, 19);
+    return 'client-' + Math.random().toString(36).slice(2, 19);
   }
 }

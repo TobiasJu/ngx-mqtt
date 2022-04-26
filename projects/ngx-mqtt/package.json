@@ -1,7 +1,7 @@
 {
 
   "name": "@meddv/ngx-mqtt",
-  "version": "13.3.2",
+  "version": "13.3.3",
   "description": "ngx mqtt client library",
   "repository": {
     "type": "git",
